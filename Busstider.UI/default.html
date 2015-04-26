@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Busstider</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/foundation.css"/>
+    <link href="./fonts/foundation-icons/foundation-icons.css" rel="stylesheet">
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet"/>
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+
+    <!-- Busstider.UI references -->
+    <link href="css/default.css" rel="stylesheet"/>
+    <script src="/js/vendor/mustache.min.js"></script>
+    <script src="js/default.js"></script>
+</head>
+<body>
+<div>
+    <div data-trigger-search class="trigger-search">
+        <i class="step fi-magnifying-glass"></i>
+    </div>
+    <div data-trigger-reload class="trigger-reload">
+        <i class="step fi-refresh"></i>
+    </div>
+    <div id="main">
+    </div>
+</div>
+<div class="row info">
+    <div id="info">
+        <i class="fi-info"></i><span></span>
+    </div>
+    <div id="clock">
+        <i class="step fi-clock"></i><span></span>
+    </div>
+</div>
+
+
+<div style="display: none;" data-test-height-container></div>
+<script src="js/vendor/jquery.js"></script>
+
+<script data-time-table-row type="text/html">
+    <div>
+        {{#.}}
+        <div class="fullWidth">
+            <div class="row">
+                <div data-line class="large-2 medium-2 columns line">{{LineNumber}}</div>
+                <div data-destination class="large-7 medium-7 columns destination">{{Destination}}</div>
+                <div data-time="{{expectedTime}}" class="large-3 medium-3 columns time">{{DisplayTime}}</div>
+            </div>
+            {{#Deviations}}
+            <div class="row">
+                <div class="push-2 large-10 medium-10 columns message columns">{{Text}}</div>
+            </div>
+            {{/Deviations}}
+        </div>
+        {{/.}}
+    </div>
+</script>
+
+<script data-no-data-row type="text/html">
+    <div>
+        <div class="fullWidth">
+            <div class="row">
+                <div data-destination class="large-12 medium-12 columns">{{.}}</div>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script data-input-row type="text/html">
+    <div class="fullWidth">
+        <div class="row">
+            <div class="large-10 medium-10 columns line">
+                <input data-input-text class="large-input" type="text">
+            </div>
+            <div class="large-2 medium-2 columns line left">
+                <button data-button></button>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script data-search-result-row type="text/html">
+    {{#.}}
+    <div class="fullWidth search-result">
+        <div class="row">
+            <div class="large-12 medium-12 columns line" data-id="{{SiteId}}">{{Name}}</div>
+        </div>
+    </div>
+    {{/.}}
+</script>
+</body>
+</html>

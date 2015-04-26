@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>0cfbeb17-1e09-46ab-9a0b-790085181d90</ProjectGuid>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).Default.props" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).props" />
+  <PropertyGroup>
+    <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
+    <TargetPlatformVersion>8.1</TargetPlatformVersion>
+    <RequiredPlatformVersion>8.1</RequiredPlatformVersion>
+    <MinimumVisualStudioVersion>12.0</MinimumVisualStudioVersion>
+    <DefaultLanguage>sv-SE</DefaultLanguage>
+    <PackageCertificateKeyFile>Busstider.UI_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
+    <AppxSymbolPackageEnabled>False</AppxSymbolPackageEnabled>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
+    <AppxBundle>Never</AppxBundle>
+    <AppxPackageDir>Z:\Apps\Busstider</AppxPackageDir>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppxManifest Include="package.appxmanifest">
+      <SubType>Designer</SubType>
+    </AppxManifest>
+    <Content Include="Assets\SplashScreen.scale-140.png" />
+    <Content Include="Assets\Square150x150Logo.scale-100.png" />
+    <Content Include="Assets\Square30x30Logo.scale-100.png" />
+    <Content Include="Assets\StoreLogo.scale-180.png" />
+    <Content Include="css\foundation.css" />
+    <Content Include="css\foundation.min.css" />
+    <Content Include="css\normalize.css" />
+    <Content Include="default.html" />
+    <Content Include="fonts\foundation-icons\.DS_Store" />
+    <Content Include="fonts\foundation-icons\.fontcustom-data" />
+    <Content Include="fonts\foundation-icons\foundation-icons.css" />
+    <Content Include="fonts\foundation-icons\foundation-icons.eot" />
+    <Content Include="fonts\foundation-icons\foundation-icons.svg" />
+    <Content Include="fonts\foundation-icons\foundation-icons.ttf" />
+    <Content Include="fonts\foundation-icons\foundation-icons.woff" />
+    <Content Include="fonts\foundation-icons\preview.html" />
+    <Content Include="fonts\foundation-icons\svgs\fi-address-book.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-alert.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-align-center.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-align-justify.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-align-left.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-align-right.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-anchor.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-annotate.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-archive.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrow-down.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrow-left.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrow-right.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrow-up.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrows-compress.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrows-expand.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrows-in.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-arrows-out.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-asl.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-asterisk.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-at-sign.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-background-color.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-battery-empty.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-battery-full.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-battery-half.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-bitcoin-circle.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-bitcoin.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-blind.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-bluetooth.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-bold.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-book-bookmark.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-book.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-bookmark.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-braille.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-burst-new.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-burst-sale.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-burst.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-calendar.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-camera.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-check.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-checkbox.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-clipboard-notes.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-clipboard-pencil.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-clipboard.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-clock.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-closed-caption.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-cloud.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-comment-minus.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-comment-quotes.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-comment-video.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-comment.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-comments.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-compass.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-contrast.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-credit-card.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-crop.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-crown.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-css3.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-database.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-die-five.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-die-four.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-die-one.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-die-six.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-die-three.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-die-two.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-dislike.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-dollar-bill.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-dollar.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-download.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-eject.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-elevator.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-euro.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-eye.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-fast-forward.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-female-symbol.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-female.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-filter.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-first-aid.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-flag.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-folder-add.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-folder-lock.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-folder.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-foot.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-foundation.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-graph-bar.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-graph-horizontal.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-graph-pie.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-graph-trend.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-guide-dog.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-hearing-aid.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-heart.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-home.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-html5.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-indent-less.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-indent-more.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-info.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-italic.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-key.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-laptop.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-layout.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-lightbulb.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-like.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-link.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-list-bullet.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-list-number.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-list-thumbnails.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-list.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-lock.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-loop.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-magnifying-glass.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-mail.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-male-female.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-male-symbol.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-male.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-map.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-marker.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-megaphone.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-microphone.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-minus-circle.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-minus.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-mobile-signal.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-mobile.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-monitor.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-mountains.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-music.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-next.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-no-dogs.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-no-smoking.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-add.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-copy.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-csv.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-delete.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-doc.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-edit.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-export-csv.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-export-doc.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-export-pdf.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-export.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-filled.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-multiple.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-pdf.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-remove.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page-search.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-page.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-paint-bucket.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-paperclip.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-pause.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-paw.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-paypal.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-pencil.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-photo.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-play-circle.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-play-video.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-play.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-plus.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-pound.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-power.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-previous.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-price-tag.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-pricetag-multiple.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-print.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-prohibited.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-projection-screen.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-puzzle.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-quote.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-record.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-refresh.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-results-demographics.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-results.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-rewind-ten.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-rewind.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-rss.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-safety-cone.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-save.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-share.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-sheriff-badge.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-shield.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-shopping-bag.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-shopping-cart.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-shuffle.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-skull.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-500px.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-adobe.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-amazon.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-android.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-apple.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-behance.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-bing.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-blogger.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-delicious.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-designer-news.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-deviant-art.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-digg.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-dribbble.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-drive.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-dropbox.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-evernote.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-facebook.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-flickr.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-forrst.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-foursquare.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-game-center.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-github.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-google-plus.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-hacker-news.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-hi5.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-instagram.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-joomla.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-lastfm.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-linkedin.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-medium.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-myspace.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-orkut.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-path.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-picasa.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-pinterest.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-rdio.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-reddit.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-skillshare.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-skype.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-smashing-mag.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-snapchat.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-spotify.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-squidoo.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-stack-overflow.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-steam.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-stumbleupon.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-treehouse.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-tumblr.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-twitter.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-vimeo.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-windows.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-xbox.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-yahoo.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-yelp.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-youtube.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-zerply.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-social-zurb.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-sound.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-star.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-stop.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-strikethrough.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-subscript.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-superscript.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-tablet-landscape.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-tablet-portrait.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-target-two.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-target.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-telephone-accessible.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-telephone.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-text-color.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-thumbnails.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-ticket.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torso-business.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torso-female.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torso.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torsos-all-female.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torsos-all.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torsos-female-male.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torsos-male-female.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-torsos.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-trash.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-trees.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-trophy.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-underline.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-universal-access.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-unlink.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-unlock.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-upload-cloud.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-upload.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-usb.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-video.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-volume-none.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-volume-strike.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-volume.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-web.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-wheelchair.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-widget.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-wrench.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-x-circle.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-x.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-yen.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-zoom-in.svg" />
+    <Content Include="fonts\foundation-icons\svgs\fi-zoom-out.svg" />
+    <Content Include="images\logo.scale-100.png" />
+    <Content Include="images\smalllogo.scale-100.png" />
+    <Content Include="images\splashscreen.scale-100.png" />
+    <Content Include="images\storelogo.scale-100.png" />
+    <Content Include="js\default.js" />
+    <Content Include="css\default.css" />
+    <Content Include="js\foundation.min.js" />
+    <Content Include="js\foundation\foundation.abide.js" />
+    <Content Include="js\foundation\foundation.accordion.js" />
+    <Content Include="js\foundation\foundation.alert.js" />
+    <Content Include="js\foundation\foundation.clearing.js" />
+    <Content Include="js\foundation\foundation.dropdown.js" />
+    <Content Include="js\foundation\foundation.equalizer.js" />
+    <Content Include="js\foundation\foundation.interchange.js" />
+    <Content Include="js\foundation\foundation.joyride.js" />
+    <Content Include="js\foundation\foundation.js" />
+    <Content Include="js\foundation\foundation.magellan.js" />
+    <Content Include="js\foundation\foundation.offcanvas.js" />
+    <Content Include="js\foundation\foundation.orbit.js" />
+    <Content Include="js\foundation\foundation.reveal.js" />
+    <Content Include="js\foundation\foundation.slider.js" />
+    <Content Include="js\foundation\foundation.tab.js" />
+    <Content Include="js\foundation\foundation.tooltip.js" />
+    <Content Include="js\foundation\foundation.topbar.js" />
+    <Content Include="js\vendor\fastclick.js" />
+    <Content Include="js\vendor\jquery.cookie.js" />
+    <Content Include="js\vendor\jquery.js" />
+    <Content Include="js\vendor\modernizr.js" />
+    <Content Include="js\vendor\mustache.min.js" />
+    <Content Include="js\vendor\placeholder.js" />
+    <Content Include="packages.config" />
+    <Content Include="Scripts\jquery-2.1.3.intellisense.js" />
+    <Content Include="Scripts\jquery-2.1.3.js" />
+    <Content Include="Scripts\jquery-2.1.3.min.js" />
+    <Content Include="Scripts\jquery-2.1.3.min.map" />
+    <None Include="Busstider.UI_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="Microsoft.WinJS.2.0, Version=1.0" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\$(WMSJSProjectDirectory)\Microsoft.VisualStudio.$(WMSJSProject).targets" />
+  <!-- To modify your build process, add your task inside one of the targets below then uncomment
+       that target and the DisableFastUpToDateCheck PropertyGroup. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <PropertyGroup>
+    <DisableFastUpToDateCheck>true</DisableFastUpToDateCheck>
+  </PropertyGroup>
+  -->
+</Project>
